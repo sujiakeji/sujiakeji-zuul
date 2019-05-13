@@ -1,0 +1,21 @@
+server:
+  port: 9300
+
+spring:
+  application:
+    name: sujiakeji-zuul
+  rabbitmq:
+    host: ${RABBITMQ_HOST}
+    port: ${RABBITMQ_PORT}
+    username: dev
+    password: dev
+
+logging:
+  level:
+    org.springframework.cloud: 'DEBUG'
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
